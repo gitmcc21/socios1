@@ -1,0 +1,685 @@
+<script src="https://cdn03.jotfor.ms/static/prototype.forms.js?v=3.3.50851" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?v=3.3.50851" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/b1f834c03aa/for-widgets-server.js?v=3.3.50851" type="text/javascript"></script>
+
+<script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.50851" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.50851" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
+	JotForm.newPaymentUI = true;
+	JotForm.replaceTagTest = true;
+
+   JotForm.setConditions([{"action":[{"id":"action_1706855222598","visibility":"HideMultiple","isError":false,"fields":["24","28","26"]}],"id":"1706855239770","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1706855222598","field":"22","operator":"isEmpty","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_1706855172703","visibility":"HideMultiple","isError":false,"fields":["24","26"]}],"id":"1706855190852","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1706855172703","field":"22","operator":"equals","value":"Tarjeta","isError":false}],"type":"field"},{"action":[{"id":"action_0_1706855144370","visibility":"HideMultiple","isError":false,"fields":["28","26"]}],"id":"1706854525724","index":"2","link":"Any","priority":"2","terms":[{"id":"term_0_1706855144369","field":"22","operator":"equals","value":"transferencia bancaria","isError":false}],"type":"field"},{"action":[{"id":"action_0_1706855162307","visibility":"HideMultiple","isError":false,"fields":["24","28"]}],"id":"1706854451407","index":"3","link":"Any","priority":"3","terms":[{"id":"term_0_1706855162307","field":"22","operator":"equals","value":"bizum","isError":false}],"type":"field"},{"action":[{"id":"action_0_1706854324778","visibility":"ShowMultiple","isError":false,"fields":["10","11","15","16","18","17","19","20"]}],"id":"1706852645064","index":"4","link":"Any","priority":"4","terms":[{"id":"term_0_1706854324778","field":"9","operator":"isFilled","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_1706852516644","visibility":"ShowMultiple","isError":false,"fields":["9"]}],"id":"1706852533713","index":"5","link":"Any","priority":"5","terms":[{"id":"term_1706852516644","field":"7","operator":"isFilled","value":"","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":221721612490044,"campaign":"powered_by_jotform_le","isCardForm":false,"isLegacyForm":true})});	JotForm.isFullSource = true;
+
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_11').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_17').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_19').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_20').setAttribute('tabindex',0);
+      JotForm.alterTexts({"ageVerificationError":"Debe ser mayor de {minAge} años para enviar este formulario.","alphabetic":"Este campo solo puede contener letras.","alphanumeric":"Este campo solo puede contener letras y números.","appointmentSelected":"Ha seleccionado {time} del {date}","ccDonationMinLimitError":"La Cantidad Mínima es {minAmount} {currency}","ccInvalidCVC":"El número CVC no es válido.","ccInvalidExpireDate":"La fecha de expiración no es válida","ccInvalidNumber":"El número de su tarjeta de crédito no es válido.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Favor ponga valores númericos en la cantidad a donar.","ccMissingProduct":"Por favor seleccione al menos un producto.","characterLimitError":"Demasiados caracteres. El límite es","characterMinLimitError":"Muy pocos caracteres. El mínimum es","confirmClearForm":"¿Está seguro que desea limpiar el formulario?","confirmEmail":"El correo electrónico no coincide","currency":"Este campo sólo puede contener valores de moneda.","cyrillic":"Este campo solo puede contener caracteres cirílicos.","dateInvalid":"Esta fecha no es valida. El formato de fecha es {format}","dateInvalidSeparate":"Esta fecha no es válida. Ponga una {element} válida","dateLimited":"Esta fecha no está disponible.","disallowDecimals":"Por favor, introduzca un número entero.","dragAndDropFilesHere_infoMessage":"Arrastre y suelte archivos aquí","email":"Introduzca una dirección e-mail válida","fillMask":"El valor de este campo debe llenar la mascara","freeEmailError":"No se permiten cuentas de correo gratuitas","generalError":"Existen errores en el formulario, por favor corríjalos antes de continuar.","generalPageError":"Hay errores en esta página. Por favor, corríjalos antes de continuar.","gradingScoreError":"El puntaje total debería ser sólo &amp;quot;menos que&amp;quot; o &amp;quot;igual que&amp;quot;","incompleteFields":"Existen campos requeridos incompletos. Por favor complételos.","inputCarretErrorA":"La entrada no debe ser inferior al valor mínimo:","inputCarretErrorB":"La entrada debe ser menor al valor:","justSoldOut":"Se acaba de agotar","lessThan":"Su puntuación debería ser menor o igual que","maxDigitsError":"El máximo de dígitos permitido es","maxFileSize_infoMessage":"Tamaño de Archivo Máx.","maxSelectionsError":"The maximum number of selections allowed is ","minSelectionsError":"El número mínimo de opciones obligatorias es","multipleFileUploads_emptyError":"El fichero {file} está vacío; por favor, seleccione de nuevo los ficheros sin él.","multipleFileUploads_fileLimitError":"Solo {fileLimit} carga de archivos permitida.","multipleFileUploads_minSizeError":"{file} is demasiado pequeño, el tamaño mínimo de fichero es: {minSizeLimit}.","multipleFileUploads_onLeave":"Se están cargando los ficheros, si cierras ahora, se cancelará dicha carga.","multipleFileUploads_sizeError":"{file} es demasiado grande; el tamaño del archivo no debe superar los {sizeLimit}.","multipleFileUploads_typeError":"El fichero {file} posee una extensión no permitida. Sólo están permitidas las extensiones {extensions}.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","noSlotsAvailable":"No hay cupos disponibles","notEnoughStock":"No hay suficientes existencias para la selección actual","notEnoughStock_remainedItems":"No hay suficientes existencias para la selección actual (quedan {count} artículos)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"Este campo sólo admite valores numéricos.","pastDatesDisallowed":"La fecha debe ser futura","pleaseWait":"Por favor, espere ...","required":"Este campo es obligatorio.","requireEveryCell":"Se requieren todas las celdas.","requireEveryRow":"Todas las filas son obligatorias.","requireOne":"Al menos un campo requerido.","restrictedDomain":"This domain is not allowed","selectionSoldOut":"Selección agotada","slotUnavailable":"{time} del {date} ha sido tomada. Favor seleccionar otro espacio.","soldOut":"Agotado","subProductItemsLeft":"(quedan {count} productos)","uploadExtensions":"Solo puede subir los siguientes archivos:","uploadFilesize":"Tamaño del archivo no puede ser mayor que:","uploadFilesizemin":"Tamañao de archivo no puede ser menos de:","url":"Este campo solo contiene una URL válida.","validateEmail":"Usted necesita validar este e-mail","wordLimitError":"Demasiadas palabras. El límite es","wordMinLimitError":"Muy pocas palabras. El mínimo es"});
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,{"name":"escribaUna","qid":"7","text":"INTRODUZCA SU DNI Y PULSE BUSCAR (LETRA EN LETRA MAYUSCULA)","type":"control_widget"},{"description":"","name":"categoria","qid":"8","subLabel":"","text":"CATEGORIA","type":"control_textbox"},{"name":"escribaUna9","qid":"9","text":"INTRODUZCA SU CONTASENA DE ACCESO Y PULSE BUSCAR","type":"control_widget"},{"description":"","name":"socioNumero","qid":"10","subLabel":"","text":"SOCIO NUMERO","type":"control_textbox"},{"description":"","name":"nombre","qid":"11","subLabel":"","text":"NOMBRE","type":"control_textbox"},null,{"name":"enviar","qid":"13","text":"reiniciar","type":"control_button"},{"name":"acionDel","qid":"14","text":"informacion del socio","type":"control_head"},{"description":"","name":"apellido1","qid":"15","subLabel":"","text":"APELLIDO 1","type":"control_textbox"},{"description":"","name":"apellido2","qid":"16","subLabel":"","text":"APELLIDO 2","type":"control_textbox"},{"description":"","name":"direccion","qid":"17","subLabel":"","text":"DIRECCION","type":"control_textbox"},{"description":"","name":"telefono","qid":"18","subLabel":"","text":"TELEFONO","type":"control_textbox"},{"description":"","name":"Cuota","qid":"19","subLabel":"","text":"  CUOTA 2024 PAGADA","type":"control_textbox"},{"description":"","name":"derramaEnero","qid":"20","subLabel":"","text":"DERRAMA 2024 PAGADA","type":"control_textbox"},{"name":"papa","qid":"21","text":"PAGO DE CUOTAS","type":"control_head"},{"description":"","name":"eE","qid":"22","text":"SELECCIONE SU FORMA DE PAGO","type":"control_radio"},null,{"name":"input24","qid":"24","text":"CUENTA PARA TRANSFERENCIAS:\r\n XXXX XXXX XXXX XXXX XXXX\r\n \r\n ","type":"control_text"},null,{"name":"ltpgtcuentaPara","qid":"26","text":"TELEFONO BIZUM\r\n XXXXXXXXX\r\n \r\n ","type":"control_text"},null,{"name":"ltpgtcuentaPara28","qid":"28","text":"TARJETA\r\n XXXX XXXX XXXX XXXX XXXX\r\n \r\n ","type":"control_text"}]);}, 20); 
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/static/form-common.css?v=6655da3
+"/>
+<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.50851&themeRevisionID=5f7ed99c2c2c7240ba580251"/>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.50851" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.50851" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/donationBox.css?v=3.3.50851">
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+
+  
+  /*PREFERENCES STYLE*/
+  /* NEW THEME STYLE */
+
+  /* colors */
+
+  .calendar-new-header-withSVG .calendar-new-header .nextYear svg,
+  .calendar-new-header-withSVG .calendar-new-header .nextMonth svg,
+  .calendar-new-header-withSVG .calendar-new-header .previousYear svg,
+  .calendar-new-header-withSVG .calendar-new-header .previousMonth svg,
+  .FITB-inptCont .form-textbox, .FITB-inptCont .form-dropdown,
+  span.FITB-inptCont[data-type=selectbox] select,
+  span.FITB-inptCont[data-type=timebox] select,
+  .rating-item label,
+  .currentDate,
+  .pickerItem select,
+  .appointmentCalendar .calendarDay,
+  .calendar.popup table tbody td,
+  .calendar-new-header > *,
+  span.form-sub-label, label.form-sub-label, div.form-header-group .form-subHeader,
+  .rating-item-title.for-to > label:first-child,
+  .rating-item-title.for-from > label:first-child,
+  .rating-item-title .editor-container *  {
+    color: #12458D;
+  }
+  .rating-item input:hover+label,
+  .appointmentSlotsContainer > *,
+  li[data-type=control_fileupload] .qq-upload-button,
+  li[data-type=control_fileupload] .jfUpload-heading,
+  .form-textbox::placeholder {
+    color: #12458D;
+  }
+  .clear-pad-btn,
+  .appointmentCalendar .dayOfWeek,
+  .calendar.popup th {
+    color: #FFFFFF;
+  }
+
+  .until-text,
+  .form-submit-reset {
+    color: #12458D;
+  }
+  .appointmentCalendar .calendarDay.isSelected:after {
+    color: #FFFFFF;
+  }
+  .form-pagebreak-next,
+  .form-pagebreak-back,
+  .form-collapse-table,
+  .form-matrix-column-headers,
+  .form-matrix-row-headers,
+  .form-spinner-button-container>* {
+    color: #FFFFFF;
+  }
+  .stageEmpty,
+  .btn-barebone,
+  .formPage-stuff,
+  .scrollToTop .scrollToTop-text {
+    color: #FFFFFF;
+  }
+  .scrollToTop svg {
+    fill: #FFFFFF;
+  }
+  .form-dropdown:not(.time-dropdown):not(:required),
+  .form-dropdown:not(:required),
+  .form-dropdown:required:invalid,
+  .form-spinner-input {
+    color: #12458D;
+  }
+  .FITB:not(.formRender) .qb-datebox input:not([data-labelid]), .FITB:not(.formRender) .qb-selectbox input:not([data-labelid]),
+  .FITB:not(.formRender) .qb-signaturebox input:not([data-labelid]), .FITB:not(.formRender) .qb-textbox input:not([data-labelid]),
+  .FITB:not(.formRender) .qb-timebox input:not([data-labelid]), span.FITB-inptCont[data-type=datebox] label,
+  span.FITB-inptCont[data-type=signaturebox] label, span.FITB-inptCont[data-type=textbox] label, span.FITB-inptCont[data-type=timebox] label,
+  span.FITB-inptCont[data-type=datebox] input:focus~label, span.FITB-inptCont[data-type=datebox] input:valid~label,
+  span.FITB-inptCont[data-type=signaturebox] input:focus~label, span.FITB-inptCont[data-type=signaturebox] input:valid~label,
+  span.FITB-inptCont[data-type=textbox] input:focus~label, span.FITB-inptCont[data-type=textbox] input:valid~label,
+  span.FITB-inptCont[data-type=timebox] input:focus~label, span.FITB-inptCont[data-type=timebox] input:valid~label {
+    color: #12458D;
+  }
+
+  .appointmentCalendar .calendarWeek .calendarDay.isUnavailable,
+  .calendar tr.days td.otherDay,
+  .calendar tr.days td:hover:not(.unselectable) {
+    color: #5B95E6;
+  }
+
+  /* border-colors */
+  .form-dropdown,
+  .form-textarea,
+  .form-textbox,
+  li[data-type=control_fileupload] .qq-upload-button,
+  .rating-item label,
+  .rating-item input:focus+label,
+  .rating-item input:checked+label,
+  .jf-form-buttons,
+  .form-checkbox+label:before, .form-checkbox+span:before, .form-radio+label:before, .form-radio+span:before,
+  .signature-pad-passive,
+  .signature-wrapper,
+  .appointmentCalendarContainer,
+  .appointmentField .timezonePickerName,
+  .appointmentDayPickerButton,
+  .appointmentCalendarContainer .monthYearPicker .pickerItem+.pickerItem,
+  .appointmentCalendarContainer .monthYearPicker,
+  .appointmentCalendar .calendarDay.isActive .calendarDayEach, .appointmentCalendar .calendarDay.isToday .calendarDayEach, .appointmentCalendar .calendarDay:not(.empty):hover .calendarDayEach,
+  .calendar.popup:before,
+  .calendar-new-month,
+  .form-matrix-column-headers, .form-matrix-table td, .form-matrix-table td:last-child,
+  .form-matrix-table th, .form-matrix-table th:last-child, .form-matrix-table tr:last-child td, .form-matrix-table tr:last-child th, .form-matrix-table tr:not([role=group])+tr[role=group] th,
+  .form-matrix-headers.form-matrix-column-headers,
+  .isSelected .form-matrix-column-headers:nth-last-of-type(2),
+  li[data-type=control_inline] input[type=email], li[data-type=control_inline] input[type=number],
+  li[data-type=control_inline] input[type=tel], li[data-type=control_inline] input[type=text]:not(#productSearch-input),  .form-line[data-payment=true] .form-textbox,
+  .form-line[data-payment=true] .select-area,
+  .form-line[data-payment=true] #coupon-input,
+  .form-line[data-payment=true] #coupon-container input,
+  .form-line[data-payment=true] input#productSearch-input,
+  .form-line[data-payment=true] .form-product-category-item:after,
+  .form-line[data-payment=true] .filter-container .dropdown-container .select-content,
+  .form-line[data-payment=true] .form-textbox.form-product-custom_quantity,
+  .form-line[data-payment="true"] .form-product-item .p_checkbox .select_border,
+  .form-line[data-payment="true"] .form-product-item .form-product-container .form-sub-label-container span.select_cont,
+  .form-line[data-payment=true] select.form-dropdown,
+  .form-line[data-payment=true] #payment-category-dropdown .select-area,
+  .form-line[data-payment=true] #payment-sorting-products-dropdown .select-area,
+  .form-line[data-payment=true] .dropdown-container .select-content,
+  .form-line[data-payment="true"] hr,
+  .form-line[data-payment=true] .p_item_separator,
+  .form-line[data-payment="true"] .payment_footer.new_ui,
+  .form-line.card-3col .form-product-item.new_ui,
+  .form-line.card-2col .form-product-item.new_ui,
+  .form-line[data-payment=true] .form-product-category-item,
+  .form-line[data-payment=true] .payment-form-table span.form-sub-label-container iframe,
+  .form-line[data-type=control_square] .payment-form-table span.form-sub-label-container iframe{
+    border-color: #12458D;
+  }
+  .stageEmpty,
+  .form-page-break:before,
+  .welcome-page-break:before,
+  .thankyou-page-break:before,
+  .form-cover-break:before,
+  .form-page-break:after,
+  .welcome-page-break:after,
+  .thankyou-page-break:after,
+  .form-cover-break:after {
+    border-color: #FFFFFF;
+  }
+
+  .rating-item input:hover+label,
+  .appointmentSlot,
+  .form-checkbox:checked+label:before, .form-checkbox:checked+span:before, .form-checkbox:checked+span label:before,
+  .form-radio:checked+label:before, .form-radio:checked+span:before,
+  .form-dropdown:focus, .form-textarea:focus, .form-textbox:focus, .signature-wrapper:focus,
+  .form-line[data-payment="true"] .form-product-item .p_checkbox .checked,
+  .form-dropdown:hover, .form-textarea:hover, .form-textbox:hover, .signature-wrapper:hover {
+    border-color: #12458D;
+  }
+
+  .calendar tr.days td:hover:not(.unselectable):after {
+    border-color: #5B95E6;
+  }
+  .form-header-group,
+  .form-buttons-wrapper, .form-pagebreak, .form-submit-clear-wrapper,
+  .form-pagebreak-next,
+  .form-pagebreak-back,
+  .form-checkbox:hover+label:before, .form-checkbox:hover+span:before, .form-radio:hover+label:before, .form-radio:hover+span:before,
+  .divider {
+    border-color: #2462B9;
+  }
+  .form-pagebreak-back:focus, .form-pagebreak-next:focus, .form-submit-button:focus {
+    border-color: rgba(18, 69, 141, 1);
+  }
+  /* background-colors */
+
+  .form-matrix-values,
+  .form-matrix-values,
+  .signature-wrapper,
+  .signature-pad-passive,
+  .form-checkbox+label:before, .form-checkbox+span:before,
+  .form-radio+label:before, .form-radio+span:before, 
+  .form-line[data-payment=true] #coupon-input,
+  .form-line[data-payment=true] input#productSearch-input,
+  .form-line[data-payment=true] .select-area,
+  .form-line[data-payment=true] .custom_quantity,
+  .form-line[data-payment=true] .filter-container .select-content,
+  .form-line[data-payment=true] .p_checkbox .select_border,
+  .form-line[data-payment=true] #payment-category-dropdown .select-area,
+  .form-line[data-payment=true] #payment-sorting-products-dropdown .select-area,
+  .form-line[data-payment=true] .dropdown-container .select-content {
+    background-color: #FFFFFF;
+  }
+  .form-line-active {
+    background-color: #FFFFFF;
+  }
+  .stageEmpty {
+    background-color:  #2462B9;
+  }
+  .form-matrix-column-headers,
+  .form-matrix-row-headers,
+  .form-spinner-button-container>*,
+  .appointmentDayPickerButton,
+  .form-collapse-table,
+  .form-collapse-table:hover  {
+    background-color:  #12458D;
+  }
+  .calendar.popup, .calendar.popup table,
+  .calendar.popup table tbody td:after {
+    background-color: #E4EFFF;
+  }
+  .form-line-error {
+    background-color: #FFD6D6;
+  }
+
+  .appointmentCalendar .calendarDay.isActive .calendarDayEach,
+  .appointmentFieldRow.forSelectedDate,
+  .calendar.popup tr.days td.selected:after,
+  .calendar.popup:after,
+  .submit-button,
+  .form-checkbox:checked+label:before, .form-checkbox:checked+span:before, .form-checkbox:checked+span label:before,
+  .form-radio+label:after, .form-radio+span:after,
+  .rating-item input:checked+label,
+  .appointmentCalendar .calendarDay:after,
+  .form-line[data-payment="true"] .form-product-item .p_checkbox .checked,
+  .rating-item input:focus+label,
+  .formPage-removePage:hover,
+  .btn-barebone:hover, .btn-barebone:active {
+    background-color: #12458D;
+  }
+  .appointmentSlot.active {
+    background-color: #12458D !important;
+  }
+  .clear-pad-btn,
+  .appointmentCalendar .dayOfWeek,
+  .calendar.popup th {
+    background-color: #12458D;
+  }
+  .appointmentField .timezonePicker:hover+.timezonePickerName,
+  .form-spinner-button-container>*:hover {
+    background-color: rgba(18, 69, 141, 0.5);
+  }
+
+  li[data-type=control_fileupload] .qq-upload-button {
+    background-color: #FFFFFF;
+  }
+  .JotFormBuilder .appContainer #app li.form-line[data-type=control_matrix].isSelected .questionLine-editButton.forRemove:after,
+  .JotFormBuilder .appContainer #app li.form-line[data-type=control_matrix].isSelected .questionLine-editButton.forRemove:before {
+    background-color: #FFFFFF;
+  }
+  .page-section li.form-line-active[data-type="control_button"] {
+    background-color: #FFFFFF;
+  }
+  .appointmentDayPickerButton:after,
+  .form-collapse-table:after {
+    background-color: #E4EFFF;
+  }
+
+  /* shadow */
+  .form-dropdown:hover, .form-textarea:hover, .form-textbox:hover, .signature-wrapper:hover,
+  .calendar.popup:before,
+  .jSignature:hover,
+  li[data-type=control_fileupload] .qq-upload-button-hover,
+  .form-line[data-payment="true"] .form-product-item .p_checkbox .checked,
+  .form-line[data-payment="true"] .form-product-item .p_checkbox:hover .select_border,
+  .form-checkbox:hover+label:before, .form-checkbox:hover+span:before, .form-radio:hover+label:before, .form-radio:hover+span:before,
+  .calendar.popup:before {
+    border-color: rgba(18, 69, 141, 0.5);
+    box-shadow: 0 0 0 1px rgba(18, 69, 141, 0.25);
+  }
+  .form-dropdown:focus, .form-textarea:focus, .form-textbox:focus, .signature-wrapper:focus,
+  li[data-type=control_fileupload] .qq-upload-button-focus,
+  .form-checkbox:focus+label:before, .form-checkbox:focus+span:before, .form-radio:focus+label:before, .form-radio:focus+span:before,
+  .calendar.popup:before {
+    border-color: rgba(18, 69, 141, 1);
+    box-shadow: 0 0 0 1px rgba(18, 69, 141, 0.25);
+  }
+  .calendar.popup table tbody td{
+    box-shadow: none;
+  }
+
+  /* button colors */
+  .submit-button {
+    background-color: #12458D;
+    border-color: #12458D;
+  }
+  .submit-button:hover {
+    background-color: #0B2955;
+    border-color: #0B2955;
+  }
+  .form-pagebreak-next,
+  .form-pagebreak-back {
+    background-color: #2462B9;
+  }
+  .form-pagebreak-back:hover {
+    background-color: #163B6F;
+    border-color: #163B6F;
+  }
+  .form-pagebreak-next:hover {
+    background-color: #163B6F;
+    border-color: #163B6F;
+  }
+  .form-sacl-button, .form-submit-print {
+    background-color: transparent;
+    color: #12458D;
+    border-color: #12458D;
+  }
+  .form-sacl-button:hover, .form-submit-print:hover,
+  .appointmentSlot:not(.disabled):not(.active):hover,
+  .appointmentDayPickerButton:hover,
+  .rating-item input:hover+label {
+    background-color: rgba(18, 69, 141, 0.5);
+  }
+
+  /* payment styles */
+
+  .form-line[data-payment=true] .form-product-category-item.title_collapsed.has_selected_product .selected-items-icon {
+   background-color: rgba(18,69,141,.7);
+   border-color: rgba(18,69,141,.7);
+  }
+  .form-line[data-payment=true].form-line.card-3col .form-product-item,
+  .form-line[data-payment=true].form-line.card-2col .form-product-item {
+   background-color: rgba(0,0,0,.05);
+  }
+
+  /* icons */
+  .appointmentField .timezonePickerName:before,
+  [data-blotid][data-type=timebox]:after,
+  span.FITB-inptCont[data-type=timebox] .FITB-inptCont-inner:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDcuOTYwMkMwIDMuNTY2MTcgMy41NTgyMSAwIDcuOTUyMjQgMEMxMi4zNTQyIDAgMTUuOTIwNCAzLjU2NjE3IDE1LjkyMDQgNy45NjAyQzE1LjkyMDQgMTIuMzU0MiAxMi4zNTQyIDE1LjkyMDQgNy45NTIyNCAxNS45MjA0QzMuNTU4MjEgMTUuOTIwNCAwIDEyLjM1NDIgMCA3Ljk2MDJaTTEuNTkzNzUgNy45NjAyQzEuNTkzNzUgMTEuNDc4NiA0LjQ0MzUgMTQuMzI4NCA3Ljk2MTkxIDE0LjMyODRDMTEuNDgwMyAxNC4zMjg0IDE0LjMzMDEgMTEuNDc4NiAxNC4zMzAxIDcuOTYwMkMxNC4zMzAxIDQuNDQxNzkgMTEuNDgwMyAxLjU5MjA0IDcuOTYxOTEgMS41OTIwNEM0LjQ0MzUgMS41OTIwNCAxLjU5Mzc1IDQuNDQxNzkgMS41OTM3NSA3Ljk2MDJaIiBmaWxsPSIjNUI5NUU2Ii8+CjxwYXRoIGQ9Ik04LjM1ODA5IDMuOTc5OThINy4xNjQwNlY4Ljc1NjFMMTEuMzQzMiAxMS4yNjM2TDExLjk0MDIgMTAuMjg0NUw4LjM1ODA5IDguMTU5MDhWMy45Nzk5OFoiIGZpbGw9IiM1Qjk1RTYiLz4KPC9zdmc+Cg==);
+  }
+  .appointmentCalendarContainer .monthYearPicker .pickerArrow.prev:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04LjU5NzgyIDUuMzM2NjRDOC45MzMxMiA1LjY0MDE4IDkuNDM5MzkgNS42MzM2IDkuNzU2MTMgNS4zMTY2OUMxMC4wODEzIDQuOTkxMzYgMTAuMDgxMyA0LjQ2MzU0IDkuNzU2MTMgNC4xMzgyMUM5LjYwOTA0IDQuMDAwMjYgOS42MDkwMyA0LjAwMDI2IDkuMDg5NDkgMy41MTUwOUM4LjQzNzQyIDIuOTA2MDkgOC40Mzc0MyAyLjkwNjA5IDcuNjU1MTEgMi4xNzU0N0M2LjA4OTU2IDAuNzEzMzUzIDYuMDg5NTYgMC43MTMzNTIgNS41Njc3MyAwLjIyNjAwN0M1LjI0MTA0IC0wLjA3MDYwMDUgNC43NTA4NSAtMC4wNjk1OTY3IDQuNDMyMzUgMC4yMjU4MzVMMC4yNjI1NCA0LjExODE1Qy0wLjA4MDU0NTkgNC40NTkzNiAtMC4wODcxNzExIDQuOTg3ODggMC4yNDE0NjggNS4zMTY2OUMwLjU1OTU1OCA1LjYzNDk2IDEuMDY5NzUgNS42NDA1OSAxLjM5NzAzIDUuMzM2NTNMNC45OTg5MSAxLjk3NTIyTDguNTk3ODIgNS4zMzY2NFoiIGZpbGw9IiMxMjQ1OEQiLz4KPC9zdmc+Cg==);
+  }
+  .appointmentCalendarContainer .monthYearPicker .pickerArrow.next:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjQwMjE4IDAuMjI2OTE1QzEuMDY2ODcgLTAuMDc2Njg0OSAwLjU2MDYwMiAtMC4wNzAwODQ5IDAuMjQzODY5IDAuMjQ2ODE1Qy0wLjA4MTI4OTggMC41NzIxMTUgLTAuMDgxMjg5OCAxLjEwMDAyIDAuMjQzODY5IDEuNDI1MzJDMC4zOTA5NTYgMS41NjMyMiAwLjM5MDk2NiAxLjU2MzIyIDAuOTEwNTEgMi4wNDg0MkMxLjU2MjU3IDIuNjU3NDIgMS41NjI1NiAyLjY1NzQxIDIuMzQ0ODggMy4zODgwMkMzLjkxMDQ0IDQuODUwMTEgMy45MTA0MyA0Ljg1MDEyIDQuNDMyMjcgNS4zMzc1MkM0Ljc1ODk1IDUuNjM0MTIgNS4yNDkxNSA1LjYzMzEyIDUuNTY3NjQgNS4zMzc3Mkw5LjczNzQ2IDEuNDQ1NDJDMTAuMDgwNSAxLjEwNDEyIDEwLjA4NzEgMC41NzU2MTUgOS43NTg1MyAwLjI0NjgxNUM5LjQ0MDQ0IC0wLjA3MTQ4NDkgOC45MzAyNCAtMC4wNzcwODQ5IDguNjAyOTcgMC4yMjcwMTVMNS4wMDEwOCAzLjU4ODMyTDEuNDAyMTggMC4yMjY5MTVaIiBmaWxsPSIjMTI0NThEIi8+Cjwvc3ZnPgo=);
+  }
+  .appointmentField .timezonePickerName:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNSA1TDkgMSIgc3Ryb2tlPSIjMTI0NThEIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+    width: 11px;
+  }
+  li[data-type=control_datetime] [data-wrapper-react=true].extended>div+.form-sub-label-container .form-textbox:placeholder-shown,
+  li[data-type=control_datetime] [data-wrapper-react=true]:not(.extended) .form-textbox:not(.time-dropdown):placeholder-shown,
+  .appointmentCalendarContainer .currentDate,
+  span[data-type="datebox"]:after {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMxMjQ1OEQiIGNsYXNzPSJ3LTEyIGgtMTIiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOCAxYTEgMSAwIDAgMSAxIDF2MWg2VjJhMSAxIDAgMSAxIDIgMHYxaDJhMyAzIDAgMCAxIDMgM3Y2LjVhMSAxIDAgMSAxLTIgMFYxMUg0djlhMSAxIDAgMCAwIDEgMWg1LjVhMSAxIDAgMSAxIDAgMkg1YTMgMyAwIDAgMS0zLTNWNmEzIDMgMCAwIDEgMy0zaDJWMmExIDEgMCAwIDEgMS0xWk03IDZWNUg1YTEgMSAwIDAgMC0xIDF2M2gxNlY2YTEgMSAwIDAgMC0xLTFoLTJ2MWExIDEgMCAxIDEtMiAwVjVIOXYxYTEgMSAwIDAgMS0yIDBabTE0LjcwNyAxMS4yMDdhMSAxIDAgMCAwLTEuNDE0LTEuNDE0TDE2LjUgMTkuNTg2bC0xLjI5My0xLjI5M2ExIDEgMCAwIDAtMS40MTQgMS40MTRsMiAyYTEgMSAwIDAgMCAxLjQxNCAwbDQuNS00LjVaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=");
+  }
+  .form-star-rating-star.Stars {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYxIiBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMTYxIDM0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNDkuMDYzIDIuMjcwMTJDNDkuMjQ2NCAxLjg5ODUzIDQ5Ljc3NjMgMS44OTg1MyA0OS45NTk3IDIuMjcwMTJMNTMuNjgyOSA5LjgxMjk4QzUzLjkwMTQgMTAuMjU1NyA1NC4zMjM4IDEwLjU2MjUgNTQuODEyMyAxMC42MzM1TDYzLjEzNzMgMTEuODQzQzYzLjU0NzUgMTEuOTAyNiA2My43MTEyIDEyLjQwNjYgNjMuNDE0NCAxMi42OTU5TDU3LjM5MDYgMTguNTY2OEM1Ny4wMzcgMTguOTExNCA1Ni44NzU2IDE5LjQwOCA1Ni45NTkxIDE5Ljg5NDZMNTguMzgxMiAyOC4xODQ3QzU4LjQ1MTIgMjguNTkzMSA1OC4wMjI1IDI4LjkwNDYgNTcuNjU1NyAyOC43MTE4TDUwLjIwOTMgMjQuNzk3NUM0OS43NzI0IDI0LjU2NzkgNDkuMjUwNCAyNC41Njc5IDQ4LjgxMzQgMjQuNzk3NUw0MS4zNjcgMjguNzExOEM0MS4wMDAyIDI4LjkwNDYgNDAuNTcxNSAyOC41OTMxIDQwLjY0MTYgMjguMTg0N0w0Mi4wNjM3IDE5Ljg5NDZDNDIuMTQ3MSAxOS40MDggNDEuOTg1OCAxOC45MTE0IDQxLjYzMjIgMTguNTY2OEwzNS42MDgzIDEyLjY5NTlDMzUuMzExNSAxMi40MDY2IDM1LjQ3NTMgMTEuOTAyNiAzNS44ODU0IDExLjg0M0w0NC4yMTA0IDEwLjYzMzVDNDQuNjk5IDEwLjU2MjUgNDUuMTIxMyAxMC4yNTU3IDQ1LjMzOTggOS44MTI5OEw0OS4wNjMgMi4yNzAxMloiIGZpbGw9IiM5NUFGRDAiIHN0cm9rZT0iIzEyNDU4RCIvPgo8cGF0aCBkPSJNMTEyLjY1MiAyLjAwOTU1QzExMi44MzYgMS42NDEzOCAxMTMuMzYxIDEuNjQxMzggMTEzLjU0NiAyLjAwOTU1TDExNy4zOTIgOS42OTA2OEMxMTcuNjEyIDEwLjEzMDQgMTE4LjAzNCAxMC40MzQyIDExOC41MjEgMTAuNTAzOUwxMjcuMDk3IDExLjczMjJDMTI3LjUwOSAxMS43OTEyIDEyNy42NzMgMTIuMjk5MSAxMjcuMzcyIDEyLjU4NzdMMTIxLjE4NSAxOC41MzE5QzEyMC44MjUgMTguODc3NSAxMjAuNjYxIDE5LjM3OTMgMTIwLjc0NiAxOS44NzA4TDEyMi4yMSAyOC4yNzg3QzEyMi4yODEgMjguNjg2MiAxMjEuODU0IDI4Ljk5ODYgMTIxLjQ4NyAyOC44MDg0TDExMy43ODkgMjQuODE5NEMxMTMuMzU2IDI0LjU5NTIgMTEyLjg0MSAyNC41OTUyIDExMi40MDggMjQuODE5NEwxMDQuNzEgMjguODA4NEMxMDQuMzQzIDI4Ljk5ODYgMTAzLjkxNyAyOC42ODYyIDEwMy45ODggMjguMjc4N0wxMDUuNDUxIDE5Ljg3MDhDMTA1LjUzNiAxOS4zNzkzIDEwNS4zNzIgMTguODc3NSAxMDUuMDEyIDE4LjUzMTlMOTguODI0OCAxMi41ODc3Qzk4LjUyNDQgMTIuMjk5MSA5OC42ODggMTEuNzkxMiA5OS4xMDA0IDExLjczMjJMMTA3LjY3NyAxMC41MDM5QzEwOC4xNjMgMTAuNDM0MiAxMDguNTg1IDEwLjEzMDQgMTA4LjgwNSA5LjY5MDY4TDExMi42NTIgMi4wMDk1NVoiIGZpbGw9IndoaXRlIiBzdHJva2U9IiMxMjQ1OEQiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTMuMSAxLjI4NTY0QzExMi42NzYgMS4xODc0NiAxMTIuMTk2IDEuMzY0NSAxMTEuOTczIDEuODE2NzVMMTA4LjE5OCA5LjQ2MzQ1QzEwOC4wNTMgOS43NTg1NyAxMDcuNzcxIDkuOTYzMTIgMTA3LjQ0NSAxMC4wMTA0TDk5LjAwNTggMTEuMjM2NkM5OC4xODU1IDExLjM1NTggOTcuODU4IDEyLjM2MzggOTguNDUxNiAxMi45NDI0TDEwNC41NTggMTguODk0MUMxMDQuNzk0IDE5LjEyMzkgMTA0LjkwMiAxOS40NTQ5IDEwNC44NDYgMTkuNzc5M0wxMDMuNDA0IDI4LjE4MzVDMTAzLjI2NCAyOS4wMDA0IDEwNC4xMjIgMjkuNjIzNCAxMDQuODU1IDI5LjIzNzdMMTEyLjQwNCAyNS4yNjk2QzExMi42MiAyNS4xNTYgMTEyLjg2OCAyNS4xMjY3IDExMy4xIDI1LjE4MTdWMS4yODU2NFoiIGZpbGw9IiMxMjQ1OEQiLz4KPHBhdGggZD0iTTE2LjA2MyAyLjI3MDEyQzE2LjI0NjQgMS44OTg1MyAxNi43NzYzIDEuODk4NTMgMTYuOTU5NyAyLjI3MDEyTDIwLjY4MjkgOS44MTI5OEMyMC45MDE0IDEwLjI1NTcgMjEuMzIzOCAxMC41NjI1IDIxLjgxMjMgMTAuNjMzNUwzMC4xMzczIDExLjg0M0MzMC41NDc1IDExLjkwMjYgMzAuNzExMiAxMi40MDY2IDMwLjQxNDQgMTIuNjk1OUwyNC4zOTA2IDE4LjU2NjhDMjQuMDM3IDE4LjkxMTQgMjMuODc1NiAxOS40MDggMjMuOTU5MSAxOS44OTQ2TDI1LjM4MTIgMjguMTg0N0MyNS40NTEyIDI4LjU5MzEgMjUuMDIyNSAyOC45MDQ2IDI0LjY1NTcgMjguNzExOEwxNy4yMDkzIDI0Ljc5NzVDMTYuNzcyNCAyNC41Njc5IDE2LjI1MDQgMjQuNTY3OSAxNS44MTM0IDI0Ljc5NzVMOC4zNjcwMyAyOC43MTE4QzguMDAwMjIgMjguOTA0NiA3LjU3MTUzIDI4LjU5MzEgNy42NDE1OSAyOC4xODQ3TDkuMDYzNjUgMTkuODk0NkM5LjE0NzEzIDE5LjQwOCA4Ljk4NTc4IDE4LjkxMTQgOC42MzIxOSAxOC41NjY4TDIuNjA4MzMgMTIuNjk1OUMyLjMxMTU0IDEyLjQwNjYgMi40NzUyOSAxMS45MDI2IDIuODg1NDIgMTEuODQzTDExLjIxMDQgMTAuNjMzNUMxMS42OTkgMTAuNTYyNSAxMi4xMjEzIDEwLjI1NTcgMTIuMzM5OCA5LjgxMjk4TDE2LjA2MyAyLjI3MDEyWiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iIzEyNDU4RCIvPgo8cGF0aCBkPSJNMTQ0LjAyNiAyLjI3MDEyQzE0NC4yMDkgMS44OTg1MyAxNDQuNzM5IDEuODk4NTMgMTQ0LjkyMyAyLjI3MDEyTDE0OC42NDYgOS44MTI5OEMxNDguODY0IDEwLjI1NTcgMTQ5LjI4NyAxMC41NjI1IDE0OS43NzUgMTAuNjMzNUwxNTguMSAxMS44NDNDMTU4LjUxIDExLjkwMjYgMTU4LjY3NCAxMi40MDY2IDE1OC4zNzcgMTIuNjk1OUwxNTIuMzUzIDE4LjU2NjhDMTUyIDE4LjkxMTQgMTUxLjgzOSAxOS40MDggMTUxLjkyMiAxOS44OTQ2TDE1My4zNDQgMjguMTg0N0MxNTMuNDE0IDI4LjU5MzEgMTUyLjk4NSAyOC45MDQ2IDE1Mi42MTkgMjguNzExOEwxNDUuMTcyIDI0Ljc5NzVDMTQ0LjczNSAyNC41Njc5IDE0NC4yMTMgMjQuNTY3OSAxNDMuNzc2IDI0Ljc5NzVMMTM2LjMzIDI4LjcxMThDMTM1Ljk2MyAyOC45MDQ2IDEzNS41MzQgMjguNTkzMSAxMzUuNjA0IDI4LjE4NDdMMTM3LjAyNyAxOS44OTQ2QzEzNy4xMSAxOS40MDggMTM2Ljk0OSAxOC45MTE0IDEzNi41OTUgMTguNTY2OEwxMzAuNTcxIDEyLjY5NTlDMTMwLjI3NCAxMi40MDY2IDEzMC40MzggMTEuOTAyNiAxMzAuODQ4IDExLjg0M0wxMzkuMTczIDEwLjYzMzVDMTM5LjY2MiAxMC41NjI1IDE0MC4wODQgMTAuMjU1NyAxNDAuMzAzIDkuODEyOThMMTQ0LjAyNiAyLjI3MDEyWiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iI0RDMjYyNiIvPgo8cGF0aCBkPSJNNzkuNjE0NyAyLjA0ODgxQzc5Ljk4MTUgMS4zMDU2NCA4MS4wNDEzIDEuMzA1NjQgODEuNDA4MSAyLjA0ODgxTDg1LjEzMTMgOS41OTE2N0M4NS4yNzY5IDkuODg2NzkgODUuNTU4NSAxMC4wOTEzIDg1Ljg4NDIgMTAuMTM4N0w5NC4yMDkyIDExLjM0ODJDOTUuMDI5NSAxMS40Njc0IDk1LjM1NyAxMi40NzU0IDk0Ljc2MzQgMTMuMDUzOUw4OC43Mzk1IDE4LjkyNDlDODguNTAzOCAxOS4xNTQ2IDg4LjM5NjIgMTkuNDg1NiA4OC40NTE5IDE5LjgxMDFMODkuODc0IDI4LjEwMDFDOTAuMDE0MSAyOC45MTcgODkuMTU2NyAyOS41NCA4OC40MjMxIDI5LjE1NDNMODAuOTc2NyAyNS4yNDAxQzgwLjY4NTQgMjUuMDg3IDgwLjMzNzQgMjUuMDg3IDgwLjA0NjEgMjUuMjQwMUw3Mi41OTk3IDI5LjE1NDRDNzEuODY2IDI5LjU0IDcxLjAwODcgMjguOTE3IDcxLjE0ODggMjguMTAwMUw3Mi41NzA5IDE5LjgxMDFDNzIuNjI2NSAxOS40ODU2IDcyLjUxODkgMTkuMTU0NiA3Mi4yODMyIDE4LjkyNDlMNjYuMjU5NCAxMy4wNTM5QzY1LjY2NTggMTIuNDc1NCA2NS45OTMzIDExLjQ2NzQgNjYuODEzNSAxMS4zNDgyTDc1LjEzODYgMTAuMTM4N0M3NS40NjQzIDEwLjA5MTMgNzUuNzQ1OCA5Ljg4Njc5IDc1Ljg5MTUgOS41OTE2N0w3OS42MTQ3IDIuMDQ4ODFaIiBmaWxsPSIjMTI0NThEIi8+Cjwvc3ZnPgo=) !important;
+  }
+  .signature-pad-passive, .signature-placeholder:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTk4IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTk4IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNzQuMTA0NCA2LjM0NTA4SDc1LjU4NTlDNzUuNTQxMiA0LjcxNDQgNzQuMDk5NCAzLjUzMTE2IDcyLjAzMTIgMy41MzExNkM2OS45ODc5IDMuNTMxMTYgNjguNDIxOSA0LjY5OTQ4IDY4LjQyMTkgNi40NTQ0NkM2OC40MjE5IDcuODcxMzYgNjkuNDM2MSA4LjcwMTYyIDcxLjA3MTcgOS4xNDQwOUw3Mi4yNzQ5IDkuNDcyMjFDNzMuMzYzNiA5Ljc2MDU2IDc0LjIwMzggMTAuMTE4NSA3NC4yMDM4IDExLjAyMzNDNzQuMjAzOCAxMi4wMTc3IDczLjI1NDMgMTIuNjczOSA3MS45NDY3IDEyLjY3MzlDNzAuNzYzNSAxMi42NzM5IDY5Ljc3OTEgMTIuMTQ2OSA2OS42ODk2IDExLjAzODNINjguMTQ4NEM2OC4yNDc5IDEyLjg4MjcgNjkuNjc0NyAxNC4wMjEyIDcxLjk1NjcgMTQuMDIxMkM3NC4zNDggMTQuMDIxMiA3NS43MjUxIDEyLjc2MzQgNzUuNzI1MSAxMS4wMzgzQzc1LjcyNTEgOS4yMDM3NSA3NC4wODk1IDguNDkyODEgNzIuNzk2OSA4LjE3NDYzTDcxLjgwMjYgNy45MTYxQzcxLjAwNzEgNy43MTIyNyA2OS45NDgyIDcuMzM5NCA2OS45NTMxIDYuMzY0OTdDNjkuOTUzMSA1LjQ5OTkxIDcwLjc0MzYgNC44NTg1OCA3MS45OTY0IDQuODU4NThDNzMuMTY0OCA0Ljg1ODU4IDczLjk5NSA1LjQwNTQ1IDc0LjEwNDQgNi4zNDUwOFoiIGZpbGw9IiMxMjQ1OEQiLz4KPHBhdGggZD0iTTc3LjQ0MTYgMTMuODUyMkg3OC45MjgxVjYuMjE1ODJINzcuNDQxNlYxMy44NTIyWk03OC4xOTIzIDUuMDM3NTVDNzguNzA0NCA1LjAzNzU1IDc5LjEzMTkgNC42Mzk4MyA3OS4xMzE5IDQuMTUyNjFDNzkuMTMxOSAzLjY2NTM5IDc4LjcwNDQgMy4yNjI3IDc4LjE5MjMgMy4yNjI3Qzc3LjY3NTIgMy4yNjI3IDc3LjI1MjcgMy42NjUzOSA3Ny4yNTI3IDQuMTUyNjFDNzcuMjUyNyA0LjYzOTgzIDc3LjY3NTIgNS4wMzc1NSA3OC4xOTIzIDUuMDM3NTVaIiBmaWxsPSIjMTI0NThEIi8+CjxwYXRoIGQ9Ik04NC4xMjk2IDE2Ljg2Qzg2LjA3MzUgMTYuODYgODcuNTc0OSAxNS45NzAxIDg3LjU3NDkgMTQuMDIxMlY2LjIxNTgySDg2LjExODNWNy40NTM3NUg4Ni4wMDg5Qzg1Ljc0NTQgNi45ODE0NSA4NS4yMTg0IDYuMTE2MzkgODMuNzk2NSA2LjExNjM5QzgxLjk1MjEgNi4xMTYzOSA4MC41OTQ4IDcuNTczMDYgODAuNTk0OCAxMC4wMDQyQzgwLjU5NDggMTIuNDQwMyA4MS45ODE5IDEzLjczNzggODMuNzg2NiAxMy43Mzc4Qzg1LjE4ODYgMTMuNzM3OCA4NS43MzA1IDEyLjk0NzQgODUuOTk4OSAxMi40NjAxSDg2LjA5MzRWMTMuOTYxNkM4Ni4wOTM0IDE1LjEzOTggODUuMjczMSAxNS42NjE4IDg0LjE0NDUgMTUuNjYxOEM4Mi45MDY2IDE1LjY2MTggODIuNDI0NCAxNS4wNDA0IDgyLjE2MDkgMTQuNjE3OEw4MC44ODMyIDE1LjE0NDhDODEuMjg1OSAxNi4wNjQ1IDgyLjMwNSAxNi44NiA4NC4xMjk2IDE2Ljg2Wk04NC4xMTQ3IDEyLjUwNDlDODIuNzg3MyAxMi41MDQ5IDgyLjA5NjIgMTEuNDg1NyA4Mi4wOTYyIDkuOTg0MjlDODIuMDk2MiA4LjUxNzY3IDgyLjc3MjQgNy4zNzkxNyA4NC4xMTQ3IDcuMzc5MTdDODUuNDEyMyA3LjM3OTE3IDg2LjEwODMgOC40MzgxMiA4Ni4xMDgzIDkuOTg0MjlDODYuMTA4MyAxMS41NjAzIDg1LjM5NzQgMTIuNTA0OSA4NC4xMTQ3IDEyLjUwNDlaIiBmaWxsPSIjMTI0NThEIi8+CjxwYXRoIGQ9Ik05MS4wNTUgOS4zMTgwOUM5MS4wNTUgOC4xMDAwNSA5MS44MDA4IDcuNDA0MDMgOTIuODM0OSA3LjQwNDAzQzkzLjg0NDEgNy40MDQwMyA5NC40NTU2IDguMDY1MjUgOTQuNDU1NiA5LjE3MzkyVjEzLjg1MjJIOTUuOTQyMVY4Ljk5NDk0Qzk1Ljk0MjEgNy4xMDU3NCA5NC45MDMxIDYuMTE2MzkgOTMuMzQyIDYuMTE2MzlDOTIuMTkzNSA2LjExNjM5IDkxLjQ0MjggNi42NDgzNSA5MS4wODk4IDcuNDU4NzJIOTAuOTk1NFY2LjIxNTgySDg5LjU2ODVWMTMuODUyMkg5MS4wNTVWOS4zMTgwOVoiIGZpbGw9IiMxMjQ1OEQiLz4KPHBhdGggZD0iTTEwMS43NiAxMy44NTIySDEwMy4yOTZWOS40MTI1NUgxMDguMzcyVjEzLjg1MjJIMTA5LjkxNFYzLjY3MDM3SDEwOC4zNzJWOC4wOTUwOEgxMDMuMjk2VjMuNjcwMzdIMTAxLjc2VjEzLjg1MjJaIiBmaWxsPSIjMTI0NThEIi8+CjxwYXRoIGQ9Ik0xMTUuMzIzIDE0LjAwNjNDMTE2Ljk4OCAxNC4wMDYzIDExOC4xNjYgMTMuMTg2IDExOC41MDQgMTEuOTQzMUwxMTcuMDk3IDExLjY4OTVDMTE2LjgyOSAxMi40MTA0IDExNi4xODMgMTIuNzc4MyAxMTUuMzM4IDEyLjc3ODNDMTE0LjA2NSAxMi43NzgzIDExMy4yMSAxMS45NTMgMTEzLjE3IDEwLjQ4MTRIMTE4LjU5OVY5Ljk1NDQ2QzExOC41OTkgNy4xOTUyMiAxMTYuOTQ4IDYuMTE2MzkgMTE1LjIxOCA2LjExNjM5QzExMy4wOSA2LjExNjM5IDExMS42ODggNy43MzcxMyAxMTEuNjg4IDEwLjA4MzdDMTExLjY4OCAxMi40NTUyIDExMy4wNyAxNC4wMDYzIDExNS4zMjMgMTQuMDA2M1pNMTEzLjE3NSA5LjM2NzgxQzExMy4yMzUgOC4yODQgMTE0LjAyIDcuMzQ0MzcgMTE1LjIyOCA3LjM0NDM3QzExNi4zODIgNy4zNDQzNyAxMTcuMTM3IDguMTk5NDkgMTE3LjE0MiA5LjM2NzgxSDExMy4xNzVaIiBmaWxsPSIjMTI0NThEIi8+CjxwYXRoIGQ9Ik0xMjAuMjQ4IDEzLjg1MjJIMTIxLjczNVY5LjE4ODgzQzEyMS43MzUgOC4xODk1NCAxMjIuNTA1IDcuNDY4NjYgMTIzLjU1OSA3LjQ2ODY2QzEyMy44NjggNy40Njg2NiAxMjQuMjE2IDcuNTIzMzUgMTI0LjMzNSA3LjU1ODE1VjYuMTM2MjdDMTI0LjE4NiA2LjExNjM5IDEyMy44OTIgNi4xMDE0NyAxMjMuNzAzIDYuMTAxNDdDMTIyLjgwOSA2LjEwMTQ3IDEyMi4wNDMgNi42MDg1OCAxMjEuNzY1IDcuNDI4ODlIMTIxLjY4NVY2LjIxNTgySDEyMC4yNDhWMTMuODUyMloiIGZpbGw9IiMxMjQ1OEQiLz4KPHBhdGggZD0iTTEyOC42MzkgMTQuMDA2M0MxMzAuMzA1IDE0LjAwNjMgMTMxLjQ4MyAxMy4xODYgMTMxLjgyMSAxMS45NDMxTDEzMC40MTQgMTEuNjg5NUMxMzAuMTQ1IDEyLjQxMDQgMTI5LjQ5OSAxMi43NzgzIDEyOC42NTQgMTIuNzc4M0MxMjcuMzgxIDEyLjc3ODMgMTI2LjUyNiAxMS45NTMgMTI2LjQ4NiAxMC40ODE0SDEzMS45MTVWOS45NTQ0NkMxMzEuOTE1IDcuMTk1MjIgMTMwLjI2NSA2LjExNjM5IDEyOC41MzUgNi4xMTYzOUMxMjYuNDA3IDYuMTE2MzkgMTI1LjAwNSA3LjczNzEzIDEyNS4wMDUgMTAuMDgzN0MxMjUuMDA1IDEyLjQ1NTIgMTI2LjM4NyAxNC4wMDYzIDEyOC42MzkgMTQuMDA2M1pNMTI2LjQ5MSA5LjM2NzgxQzEyNi41NTEgOC4yODQgMTI3LjMzNiA3LjM0NDM3IDEyOC41NDUgNy4zNDQzN0MxMjkuNjk4IDcuMzQ0MzcgMTMwLjQ1NCA4LjE5OTQ5IDEzMC40NTkgOS4zNjc4MUgxMjYuNDkxWiIgZmlsbD0iIzEyNDU4RCIvPgo8cGF0aCBkPSJNMSAzNi4wMjI5QzEyLjI0NjEgMzkuMjIwNSAyMy4xODIgMzUuMDMyOCAzMi41MDg0IDI4Ljg1MTFDMzcuNDQwNCAyNS41ODIyIDQyLjMzNDEgMjEuNjY4NyA0NS4zMzI5IDE2LjUxMDFDNDYuNTI4MyAxNC40NTM5IDQ3Ljk4OTMgMTAuODg0NCA0NC4yMjcxIDEwLjg1MjhDNDAuMTMzNyAxMC44MTgzIDM3LjA4NjQgMTQuNTE0MiAzNS41NTg4IDE3Ljg3NDRDMzMuMzY4MSAyMi42OTMzIDMzLjI5MSAyOC40MDA0IDM1Ljk2NTYgMzMuMDQ0MUMzOC40OTcxIDM3LjQzOTYgNDIuNzQ0NSAzOS41MTg0IDQ3LjgxMTQgMzguNjYzOUM1My4xMDM3IDM3Ljc3MTMgNTcuNzMwNCAzNC4xNTYyIDYxLjU3NjUgMzAuNjc4NUM2Mi45OTMgMjkuMzk3NiA2NC4zMjA5IDI4LjA0NzUgNjUuNTQyIDI2LjU4NTdDNjUuNjg0MiAyNi40MTU1IDY2LjE4NDIgMjUuNTc5OCA2Ni41MDggMjUuNTIxOEM2Ni42Mjg0IDI1LjUwMDIgNjYuODA2NCAyOS4xNjQ1IDY2LjgzODUgMjkuMzY0M0M2Ny4xMjU1IDMxLjE1NDMgNjguMDI5NCAzMy4xNzA2IDcwLjE0MzEgMzMuMjMxOEM3Mi44MzMyIDMzLjMwOTcgNzUuMDgyNiAzMS4wNTkxIDc2Ljg5MjIgMjkuNDAxOEM3Ny41MDI2IDI4Ljg0MjggNzkuNDQyNSAyNi4xNjAxIDgwLjQ3NjQgMjYuMTYwMUM4MC45MDE0IDI2LjE2MDEgODEuNzI0OSAyOC4zMDM4IDgxLjkxMjcgMjguNTg4M0M4NC4zOTcyIDMyLjM1MjMgODguMDQ0NiAzMC45ODk0IDkwLjg3MzMgMjguMzUwNUM5MS4zOTM0IDI3Ljg2NTMgOTQuMTc4MSAyMy45ODM5IDk1LjMwOTEgMjQuNjgzMkM5Ni4yMjAzIDI1LjI0NjYgOTYuNjIxNyAyNi41NzY1IDk3LjA4ODYgMjcuNDYxOEM5Ny44NDg0IDI4LjkwMjkgOTguODEwNyAyOS45Mjk0IDEwMC40MTkgMzAuNDY1N0MxMDMuOTEyIDMxLjYzMSAxMDcuNjggMjguMzYzIDExMS4yMjIgMjguMzYzQzExMi4yNTUgMjguMzYzIDExMi43ODMgMjguOTMxNiAxMTMuMzMyIDI5LjcxNDhDMTE0LjA4MSAzMC43ODIzIDExNC44NTMgMzEuNTI3NiAxMTYuMjA1IDMxLjgxNzVDMTIwLjM5MyAzMi43MTU1IDEyMy44MjIgMjguNzM5OSAxMjcuODcyIDI5LjA4ODlDMTI5LjA1MyAyOS4xOTA3IDEyOS45MzUgMzAuMzgxNiAxMzAuODIxIDMxLjAxNjRDMTMyLjYwOSAzMi4yOTY5IDEzNC43NTkgMzMuMTgzNiAxMzYuOTQ4IDMzLjQ5NDdDMTQwLjQ1NyAzMy45OTM0IDE0My45NzUgMzMuMzMyNiAxNDcuMzk1IDMyLjU5MzVDMTUzLjMgMzEuMzE3NCAxNTkuMTQ3IDI5Ljc5NTggMTY1LjA2MiAyOC41NjMzIiBzdHJva2U9IiMxMjQ1OEQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE5Ni41MTUgMTUuMDc3OEwxODQuNDkyIDAuNTUxNzk1QzE4NC4yNTcgMC4yNjc4MSAxODMuODM4IDAuMjI4MjYgMTgzLjU1NCAwLjQ2MzMwN0wxODAuNjQ5IDIuODY3ODhDMTgwLjM2NSAzLjEwMjkzIDE4MC4zMjUgMy41MjI0IDE4MC41NiAzLjgwNjM4TDE5Mi41ODMgMTguMzMyNEMxOTIuNyAxOC40NzQxIDE5Mi44NjQgMTguNTU1MSAxOTMuMDM0IDE4LjU3MTJDMTkzLjIwNCAxOC41ODcyIDE5My4zOCAxOC41MzgyIDE5My41MjIgMTguNDIwOUwxOTYuNDI3IDE2LjAxNjRDMTk2LjcxMSAxNS43ODEzIDE5Ni43NSAxNS4zNjE4IDE5Ni41MTUgMTUuMDc3OFoiIGZpbGw9IiMxMjQ1OEQiLz4KPHBhdGggZD0iTTE4MS40MzYgNi45NTcyTDE3MC44NTUgOS44MjU5M0MxNzAuNjIyIDkuODg5MDEgMTcwLjQ0MSAxMC4wNzI5IDE3MC4zODMgMTAuMzA3MUwxNjYuMTU1IDI3LjEwMTdMMTczLjk3NSAyMC42MjkxQzE3My4yNDUgMTkuMjYxMiAxNzMuNTUgMTcuNTE4OSAxNzQuNzkgMTYuNDkyMUMxNzYuMjA2IDE1LjMxOTggMTc4LjMxMiAxNS41MTkxIDE3OS40ODMgMTYuOTM0NkMxODAuNjU1IDE4LjM1MDggMTgwLjQ1NiAyMC40NTYxIDE3OS4wNDEgMjEuNjI3OEMxNzguMzMzIDIyLjIxMzkgMTc3LjQ1MiAyMi40NTc3IDE3Ni42MDMgMjIuMzc3NkMxNzUuOTY0IDIyLjMxNzQgMTc1LjM0MyAyMi4wNzQgMTc0LjgyNSAyMS42NTY4TDE2Ny4wMDUgMjguMTI4NkwxODQuMjk0IDI3LjExMzdDMTg0LjUzNCAyNy4wOTk2IDE4NC43NDkgMjYuOTU3MSAxODQuODU0IDI2Ljc0MDFMMTg5LjY1IDE2Ljg4MTRMMTgxLjQzNiA2Ljk1NzJaIiBmaWxsPSIjMTI0NThEIi8+Cjwvc3ZnPgo=);
+  }
+  .form-spinner-button.form-spinner-up:before {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjUgMTIuNDAwNEw3LjUgNy40MDAzOUwxMi41IDcuNDAwMzlDMTIuNzc2IDcuNDAwMzkgMTMgNy4xNzYzOSAxMyA2LjkwMDM5QzEzIDYuNjI0MzkgMTIuNzc2IDYuNDAwMzkgMTIuNSA2LjQwMDM5TDcuNSA2LjQwMDM5TDcuNSAxLjQwMDM5QzcuNSAxLjEyNDM5IDcuMjc2IDAuOTAwMzkgNyAwLjkwMDM5QzYuNzI0IDAuOTAwMzkgNi41IDEuMTI0MzkgNi41IDEuNDAwMzlMNi41IDYuNDAwMzlMMS41IDYuNDAwMzlDMS4yMjQgNi40MDAzOSAxIDYuNjI0MzkgMSA2LjkwMDM5QzEgNy4xNzYzOSAxLjIyNCA3LjQwMDM5IDEuNSA3LjQwMDM5TDYuNSA3LjQwMDM5TDYuNSAxMi40MDA0QzYuNSAxMi42NzY0IDYuNzI0IDEyLjkwMDQgNyAxMi45MDA0QzcuMjc2IDEyLjkwMDQgNy41IDEyLjY3NjQgNy41IDEyLjQwMDRaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz4KPC9zdmc+Cg==);
+  }
+  .form-spinner-button.form-spinner-down:before {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMiIgdmlld0JveD0iMCAwIDE0IDIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMi41IDEuNDAwMzlMNy41IDEuNDAwMzlMMS41IDEuNDAwMzlDMS4yMjQgMS40MDAzOSAxIDEuMTc2MzkgMSAwLjkwMDM5QzEgMC42MjQzOSAxLjIyNCAwLjQwMDM5IDEuNSAwLjQwMDM5TDYuNSAwLjQwMDM5TDEyLjUgMC40MDAzOTFDMTIuNzc2IDAuNDAwMzkxIDEzIDAuNjI0MzkxIDEzIDAuOTAwMzkxQzEzIDEuMTc2MzkgMTIuNzc2IDEuNDAwMzkgMTIuNSAxLjQwMDM5WiIgZmlsbD0id2hpdGUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMC41Ii8+Cjwvc3ZnPgo=);
+  }
+  li[data-type=control_fileupload] .qq-upload-button:before {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzkiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAzOSAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMyLjM3NSAxMi4xODc1QzMxLjUgNS42ODc1IDI2IDAuODc1IDE5LjM3NSAwLjg3NUMxMy42ODc1IDAuODc1IDguNzUgNC40Mzc1IDYuOTM3NSA5LjgxMjVDMi44NzUgMTAuNjg3NSAwIDE0LjE4NzUgMCAxOC4zNzVDMCAyMi45Mzc1IDMuNTYyNSAyNi43NSA4LjEyNSAyNy4xMjVIMzEuODc1SDMxLjkzNzVDMzUuNzUgMjYuNzUgMzguNzUgMjMuNSAzOC43NSAxOS42MjVDMzguNzUgMTUuOTM3NSAzNiAxMi43NSAzMi4zNzUgMTIuMTg3NVpNMjYuMDYyNSAxNS42ODc1QzI1LjkzNzUgMTUuODEyNSAyNS44MTI1IDE1Ljg3NSAyNS42MjUgMTUuODc1QzI1LjQzNzUgMTUuODc1IDI1LjMxMjUgMTUuODEyNSAyNS4xODc1IDE1LjY4NzVMMjAgMTAuNVYyMi43NUMyMCAyMy4xMjUgMTkuNzUgMjMuMzc1IDE5LjM3NSAyMy4zNzVDMTkgMjMuMzc1IDE4Ljc1IDIzLjEyNSAxOC43NSAyMi43NVYxMC41TDEzLjU2MjUgMTUuNjg3NUMxMy4zMTI1IDE1LjkzNzUgMTIuOTM3NSAxNS45Mzc1IDEyLjY4NzUgMTUuNjg3NUMxMi40Mzc1IDE1LjQzNzUgMTIuNDM3NSAxNS4wNjI1IDEyLjY4NzUgMTQuODEyNUwxOC45Mzc1IDguNTYyNUMxOSA4LjUgMTkuMDYyNSA4LjQzNzUgMTkuMTI1IDguNDM3NUMxOS4yNSA4LjM3NSAxOS40Mzc1IDguMzc1IDE5LjYyNSA4LjQzNzVDMTkuNjg3NSA4LjUgMTkuNzUgOC41IDE5LjgxMjUgOC41NjI1TDI2LjA2MjUgMTQuODEyNUMyNi4zMTI1IDE1LjA2MjUgMjYuMzEyNSAxNS40Mzc1IDI2LjA2MjUgMTUuNjg3NVoiIGZpbGw9IiMxMjQ1OEQiLz4KPC9zdmc+Cg==);
+  }
+  span[data-type=signaturebox]:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Im0xMi4wNzQgNC45NTctNi4yIDEuNTQ4YTIgMiAwIDAgMC0xLjQ0NiAxLjQxOEwxLjAxNiAyMC41MWMtLjEwNy4zOTYuMzguNjc4LjY3LjM4OGw2LjkyNi02LjkyN2EyLjUgMi41IDAgMSAxIDEuNDE1IDEuNDE0bC02LjkyOCA2LjkyN2MtLjI5LjI5LS4wMDguNzc2LjM4OC42NjlsMTIuNTg4LTMuNDEyYTIgMiAwIDAgMCAxLjQxOC0xLjQ0NmwxLjU0Ny02LjJhMiAyIDAgMCAwLS41MjYtMS44OTlsLTQuNTQyLTQuNTQxYTIgMiAwIDAgMC0xLjg5OC0uNTI3Wm0yLjM2My0uNjI0YTEuNDk0IDEuNDk0IDAgMCAxIDAtMi4xMTJsLjc4NC0uNzg0YTEuNDk0IDEuNDk0IDAgMCAxIDIuMTEyIDBsNS4yMyA1LjIzYy41ODMuNTgzLjU4MyAxLjUyOSAwIDIuMTEybC0uNzg0Ljc4M2ExLjQ5NCAxLjQ5NCAwIDAgMS0yLjExMyAwbC01LjIyOS01LjIyOVoiIGZpbGw9IiMxMjQ1OEQiLz48L3N2Zz4=);
+  }
+
+  /* NEW THEME STYLE */
+  /*PREFERENCES STYLE*//*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: inline-block;
+    float: left;
+    text-align: right;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #E4EFFF;
+    }
+  
+    .form-all {
+      color: #12458D;
+    }
+    .form-header-group .form-header {
+      color: #12458D;
+    }
+    .form-header-group .form-subHeader {
+      color: #12458D;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: #12458D;
+    }
+    .form-sub-label {
+      color: #2c5fa7;
+    }
+  
+  .supernova {
+    background-color: #2462B9;
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #ffffff;
+    }
+  
+      
+    .supernova {
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+
+      .supernova, #stage {
+        background-image: none;
+      }
+    
+      .form-all {
+        background-image: none;
+      }
+    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: right;
+      
+      }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://eu-submit.jotform.com/submit/221721612490044" method="post" name="form_221721612490044" id="221721612490044" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="221721612490044" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1707068698573" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1707068698573" />
+  <div id="formCoverLogo" style="margin-bottom:32px" class="form-cover-wrapper form-has-cover form-page-cover-image-align-center">
+    <div class="form-page-cover-image-wrapper" style="max-width:752px"><img src="https://www.jotform.com/uploads/CNUTIEL/form_files/CNU.6273869246c8d6.52220537.png" class="form-page-cover-image" width="140" aria-label="Logo de Formulario" style="aspect-ratio:140/141" /></div>
+  </div>
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_14" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_14" class="form-header" data-component="header">información del socio</h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_widget" id="id_7"><label class="form-label form-label-right form-label-auto" id="label_7" for="input_7" aria-hidden="false"> INTRODUZCA SU DNI Y PULSE BUSCAR (LETRA EN LETRA MAYÚSCULA)<span class="form-required">*</span> </label>
+        <div id="cid_7" class="form-input jf-required" data-layout="full">
+          <div data-widget-name="Hoja de cálculo a formulario" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="591dafece4a223da050009f9" title="Hoja de cálculo a formulario" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_7" src="" style="max-width:230px;border:none;width:100%;height:80px" data-width="230" data-height="80"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_7" class="form-hidden form-widget widget-required " name="q7_escribaUna" value="" /><input type="hidden" id="widget_settings_7" class="form-hidden form-widget-settings" value="%5B%7B%22name%22%3A%22spreadsheet%22%2C%22value%22%3A%7B%22size%22%3A%229089%22%2C%22fileName%22%3A%22EXCEL%20BUSCAR%20JOTFORM_6.xlsx%22%2C%22qid%22%3A%227%22%2C%22sheet%22%3A%22Hoja1%22%2C%22accessCode%22%3A%22DNI%22%7D%7D%2C%7B%22name%22%3A%22excel%22%2C%22value%22%3A%22undefined%22%7D%2C%7B%22name%22%3A%22codeColumn%22%2C%22value%22%3A%22A%22%7D%2C%7B%22name%22%3A%22labelsRow%22%2C%22value%22%3A%221%22%7D%2C%7B%22name%22%3A%22fillBtnText%22%2C%22value%22%3A%22BUSCAR%22%7D%2C%7B%22name%22%3A%22loadingText%22%2C%22value%22%3A%22Cargando...%22%7D%2C%7B%22name%22%3A%22validCodeTxt%22%2C%22value%22%3A%22ENCONTRADO%22%7D%2C%7B%22name%22%3A%22invalidCodeTxt%22%2C%22value%22%3A%22NO%20ENCONTRADO%22%7D%2C%7B%22name%22%3A%22submitInput%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22autofillByCondition%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22resetInvalid%22%2C%22value%22%3A%22Yes%22%7D%2C%7B%22name%22%3A%22hide%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22encrypted%3ABDXF8vm5zY9nPspZxCm0Ny%2FzreqrryRUSUGC7VNB3K4YqxQHgFtaZVDPz63I6MY2auUzqgdm8COCRiayBjpH9FeIB1RCC56MbScvaK5cHKufQZDirV1us5Ik3NdqMosZ%22%7D%5D" data-version="2" /></div>
+            <script type="text/javascript">
+              setTimeout(function()
+              {
+                var _cFieldFrame = document.getElementById("customFieldFrame_7");
+                if (_cFieldFrame)
+                {
+                  _cFieldFrame.onload = function()
+                  {
+                    if (typeof widgetFrameLoaded !== 'undefined')
+                    {
+                      widgetFrameLoaded(7,
+                      {
+                        "formID": 221721612490044
+                      })
+                    }
+                  };
+                  _cFieldFrame.src = "//app-widgets.jotform.io/spreadsheettoform/?qid=7&isOpenedInPortal=undefined&align=Left&ref=" +
+                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                  _cFieldFrame.addClassName("custom-field-frame-rendered");
+                }
+              }, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_8"><label class="form-label form-label-right form-label-auto" id="label_8" for="input_8" aria-hidden="false"> CATEGORIA </label>
+        <div id="cid_8" class="form-input" data-layout="half"> <input type="text" id="input_8" name="q8_categoria" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_8" readonly="" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_widget" id="id_9"><label class="form-label form-label-right form-label-auto" id="label_9" for="input_9" aria-hidden="false"> INTRODUZCA SU CONTASEÑA DE ACCESO Y PULSE BUSCAR </label>
+        <div id="cid_9" class="form-input always-hidden" data-layout="full">
+          <div data-widget-name="Hoja de cálculo a formulario" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="591dafece4a223da050009f9" title="Hoja de cálculo a formulario" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_9" src="" style="max-width:230px;border:none;width:100%;height:80px" data-width="230" data-height="80"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_9" class="form-hidden form-widget  " name="q9_escribaUna9" value="" /><input type="hidden" id="widget_settings_9" class="form-hidden form-widget-settings" value="%5B%7B%22name%22%3A%22spreadsheet%22%2C%22value%22%3A%7B%22size%22%3A%229089%22%2C%22fileName%22%3A%22EXCEL%20BUSCAR%20JOTFORM_6.xlsx%22%2C%22qid%22%3A%229%22%2C%22sheet%22%3A%22Hoja1%22%2C%22accessCode%22%3A%22DNI%22%7D%7D%2C%7B%22name%22%3A%22excel%22%2C%22value%22%3A%22undefined%22%7D%2C%7B%22name%22%3A%22codeColumn%22%2C%22value%22%3A%22A%22%7D%2C%7B%22name%22%3A%22labelsRow%22%2C%22value%22%3A%221%22%7D%2C%7B%22name%22%3A%22fillBtnText%22%2C%22value%22%3A%22BUSCAR%22%7D%2C%7B%22name%22%3A%22loadingText%22%2C%22value%22%3A%22Cargando...%22%7D%2C%7B%22name%22%3A%22validCodeTxt%22%2C%22value%22%3A%22contrase%C3%B1a%20correcta%22%7D%2C%7B%22name%22%3A%22invalidCodeTxt%22%2C%22value%22%3A%22contrase%C3%B1a%20incorrecta%22%7D%2C%7B%22name%22%3A%22submitInput%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22autofillByCondition%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22resetInvalid%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22hide%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22encrypted%3AmUdJK9QGxh1KWDX7KPDlvL9DCoCBoLyEnsz2kCj4%2Fnmdo9H5LAiEPRzeHdegVwGkqk5PD59okBaTiFRPnSe3SUg3iaWxMLpOrvUVT3FpGKETolL9KVfysZte9Sopl3t8%22%7D%5D" data-version="2" /></div>
+            <script type="text/javascript">
+              setTimeout(function()
+              {
+                var _cFieldFrame = document.getElementById("customFieldFrame_9");
+                if (_cFieldFrame)
+                {
+                  _cFieldFrame.onload = function()
+                  {
+                    if (typeof widgetFrameLoaded !== 'undefined')
+                    {
+                      widgetFrameLoaded(9,
+                      {
+                        "formID": 221721612490044
+                      })
+                    }
+                  };
+                  _cFieldFrame.src = "//app-widgets.jotform.io/spreadsheettoform/?qid=9&isOpenedInPortal=undefined&align=Left&ref=" +
+                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                  _cFieldFrame.addClassName("custom-field-frame-rendered");
+                }
+              }, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_10"><label class="form-label form-label-top form-label-auto" id="label_10" for="input_10" aria-hidden="false"> SOCIO NÚMERO </label>
+        <div id="cid_10" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_10" name="q10_socioNumero" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_10" readonly="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_11"><label class="form-label form-label-top form-label-auto" id="label_11" for="input_11" aria-hidden="false"> NOMBRE </label>
+        <div id="cid_11" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_11" name="q11_nombre" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_11" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_15"><label class="form-label form-label-top form-label-auto" id="label_15" for="input_15" aria-hidden="false"> APELLIDO 1 </label>
+        <div id="cid_15" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_15" name="q15_apellido1" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_15" readonly="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_16"><label class="form-label form-label-top form-label-auto" id="label_16" for="input_16" aria-hidden="false"> APELLIDO 2 </label>
+        <div id="cid_16" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_16" name="q16_apellido2" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_16" readonly="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-5 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_18"><label class="form-label form-label-top form-label-auto" id="label_18" for="input_18" aria-hidden="false"> TELÉFONO </label>
+        <div id="cid_18" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_18" name="q18_telefono" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_18" readonly="" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_17"><label class="form-label form-label-right form-label-auto" id="label_17" for="input_17" aria-hidden="false"> DIRECCIÓN </label>
+        <div id="cid_17" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_17" name="q17_direccion" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_17" readonly="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_19"><label class="form-label form-label-top form-label-auto" id="label_19" for="input_19" aria-hidden="false"> CUOTA 2024 PAGADA </label>
+        <div id="cid_19" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_19" name="q19_Cuota" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_19" readonly="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_20"><label class="form-label form-label-top form-label-auto" id="label_20" for="input_20" aria-hidden="false"> DERRAMA 2024 PAGADA </label>
+        <div id="cid_20" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_20" name="q20_derramaEnero" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="" style="width:310px" size="310" tabindex="-1" data-component="textbox" aria-labelledby="label_20" readonly="" value="" /> </div>
+      </li>
+      <li id="cid_21" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_21" class="form-header" data-component="header">PAGO DE CUOTAS</h2>
+            <div id="subHeader_21" class="form-subHeader">PUEDE SATISFACER SUS PAGOS POR ESTOS MEDIOS:</div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_radio" id="id_22"><label class="form-label form-label-right" id="label_22" aria-hidden="false"> SELECCIONE SU FORMA DE PAGO </label>
+        <div id="cid_22" class="form-input" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_22" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_22" class="form-radio" id="input_22_0" name="q22_eE" value="Tarjeta" /><label id="label_input_22_0" for="input_22_0">Tarjeta</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_22" class="form-radio" id="input_22_1" name="q22_eE" value="bizum" /><label id="label_input_22_1" for="input_22_1">bizum</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_22" class="form-radio" id="input_22_2" name="q22_eE" value="transferencia bancaria" /><label id="label_input_22_2" for="input_22_2">transferencia bancaria</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_24">
+        <div id="cid_24" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_24" class="form-html" data-component="text" tabindex="0">
+            <p>CUENTA PARA TRANSFERENCIAS:</p>
+            <p> XXXX XXXX XXXX XXXX XXXX</p>
+            <p> </p>
+            <p> </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_28">
+        <div id="cid_28" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_28" class="form-html" data-component="text" tabindex="0">
+            <p>TARJETA</p>
+            <p> XXXX XXXX XXXX XXXX XXXX</p>
+            <p> </p>
+            <p> </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_26">
+        <div id="cid_26" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_26" class="form-html" data-component="text" tabindex="0">
+            <p>TELÉFONO BIZUM</p>
+            <p> XXXXXXXXX</p>
+            <p> </p>
+            <p> </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_13">
+        <div id="cid_13" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><span> </span><button id="input_print_13" type="button" class="form-submit-print jf-form-buttons" data-component="button"><img src="https://cdn.jotfor.ms/images/printer.png" style="vertical-align:middle" alt="Imprimir" /><span id="span_print_13" class="span_print">imprimir</span></button><button id="input_13" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">reiniciar</button></div>
+          <div class="form-submit-clear-wrapper"><button id="input_reset_13" type="reset" class="form-submit-reset jf-form-buttons" data-component="button">Borrar todas las respuestas</button></div>
+        </div>
+      </li>
+      <li style="clear:both"></li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Desarrollado por Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="221721612490044" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='221721612490044'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "221721612490044-221721612490044";
+    }
+  </script>
+</form><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.forwardToEu=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
